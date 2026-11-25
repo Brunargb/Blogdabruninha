@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"  content="width=devide-width,initial-scale=1.0">
+            </title>Blog</title>
+      <style>
+      header{
+            background-color: rgb(203, 180, 224);
+            color:#FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #912c96;
+      }
+      main {
+           background-color: #FFFFFF;
+           color: rgb(188, 151, 225);
+           max-width: 800px;
+           margin: 0 auto;
+           padding: 16px;
+           display: flex;
+      }
+      img{
+            width: 80px;
+            height: 80px;
+      }
+     .artigo-autor {
+            font-weight: bold;
+      }
+      </style>
+</head>
+<body>
+      <header>
+<h1>Blog da Bruninha</h1>
+<p>Vou compartilhar um pouco da minha vida com vocês</p>
+      </header>
+<main>
+<img src="imagem-blog bruna.jpe"alt="Aqui respondemos suas perguntas para Bruninha: jovem morena de olhos castanhos a monitorar as perguntas no portátil numa mesa cor-de-rosa.">
+<h2>Vou contar para vocês sobre o dia de hoje 04/11/2026 
+ <p calss="artigo-autor">Por: Bruna Ramos    
+<p>Bem vindos ao meu novo blog! Aqui vou compartilhar um pouco do meu dia e curiosidades sobre mim.
+      <button>❤️<span>0</span></button>
+      <button>👎<span>0</span></button>
+
+</div>
+</main>
+</body>  
+<script>
+      const botoes = document.querySelectorAll("button");
+
+      botoes.forEach(function(botao){
+            let curtiu = false;
+           botao.addEventListener("click",botaoClicado);
+           
+            function botaoClicado(){
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if(curtiu === false){
+            texto.textContent++;
+            curtiu = true;
+            } else{
+            texto.textContent--;
+            curtiu = false;
+            }
+            
+      }
+      })
+
+</script>
